@@ -56,7 +56,7 @@ img {
 }
 
 main {
-  width: min(80%, 1000px);
+  width: min(80%, 1100px);
   margin: 10vw auto 0;
 
   color: #fff;
@@ -171,4 +171,58 @@ main {
 .card-row--content span {
   font-weight: light;
   font-size: 1rem;
+}
+
+@media (min-width: 699px) {
+  .links-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .links-section ul > li + li {
+    margin-left: 0;
+  }
+  .links-section ul > li {
+    margin-left: 0;
+    margin-top: 1em;
+    margin-right: auto;
+  }
+  main {
+    margin-top: 6vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+
+    align-items: center;
+  }
+
+  .profile-section {
+    display: block;
+  }
+
+  .card-row--content {
+    display: inline;
+  }
+
+  .card-row--content h2 {
+    font-size: 2.25rem;
+    margin: 0.5em 0;
+  }
+
+  .profile-section--name {
+    padding: 1em 0;
+  }
+
+  .profile-section--name h1 {
+    font-size: 2.5rem;
+    margin: 0.5em 0;
+  }
 }
