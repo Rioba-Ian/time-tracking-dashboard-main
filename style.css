@@ -29,7 +29,8 @@ html {
 }
 
 a,
-li {
+li,
+p {
   display: block;
 }
 
@@ -98,4 +99,76 @@ main {
 
 .links-section ul > li + li {
   margin-left: 2em;
+}
+
+.main-content {
+  margin: 2em 0 3em 0;
+}
+
+.card {
+}
+
+.main-content .card + .card {
+  margin-top: 2em;
+}
+
+.img-container {
+  border-radius: 16px 16px 0 0px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  z-index: -5;
+}
+
+.img-container img {
+  width: 3rem;
+}
+
+.card-row {
+  margin-top: -1em;
+  background-color: var(--dark-blue);
+  border-radius: 16px;
+  padding: 1.5em;
+}
+
+.main-content .card:nth-child(1) .img-container {
+  background-color: var(--light-red-work);
+}
+
+.main-content .card:nth-child(2) .img-container {
+  background-color: var(--soft-blue-play);
+}
+
+.main-content .card:nth-child(3) .img-container {
+  background-color: var(--light-red-study);
+}
+
+.main-content .card:nth-child(4) .img-container {
+  background-color: var(--lime-green-exercise);
+}
+
+.main-content .card:nth-child(5) .img-container {
+  background-color: var(--violet-social);
+}
+
+.main-content .card:nth-child(6) .img-container {
+  background-color: var(--soft-orange-selfcare);
+}
+
+.card-row div:not(:nth-child(2)) {
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-row--content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-row--content span {
+  font-weight: light;
+  font-size: 1rem;
 }
