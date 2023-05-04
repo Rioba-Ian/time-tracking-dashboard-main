@@ -90,6 +90,7 @@ main {
 
 .links-section {
   padding: 1em 0;
+  cursor: pointer;
 }
 
 .links-section ul {
