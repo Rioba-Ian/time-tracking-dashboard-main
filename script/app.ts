@@ -28,7 +28,7 @@ const cardHistory: NodeListOf<Element> = document.querySelectorAll(
 );
 
 async function fetchData() {
-  const res = await fetch("../data.json");
+  const res = await fetch("./data.json");
   const myData: myData = await res.json();
 
   for (let i = 0; i < cardRowTitle.length; i++) {

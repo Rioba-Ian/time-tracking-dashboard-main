@@ -15,7 +15,7 @@ const cardHours = document.querySelectorAll(".card-row--content h2");
 const cardHistory = document.querySelectorAll(".card-row--content span");
 function fetchData() {
     return __awaiter(this, void 0, void 0, function* () {
-        const res = yield fetch("../data.json");
+        const res = yield fetch("./data.json");
         const myData = yield res.json();
         for (let i = 0; i < cardRowTitle.length; i++) {
             cardRowTitle[i].textContent = myData[i].title;
